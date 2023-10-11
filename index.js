@@ -9,11 +9,6 @@ const cors = require('cors');
 
 const multer = require('multer');
 const AWS = require('aws-sdk');
-// AWS.config.update({
-//     accessKeyId: 'AKIA2FAFLMZQ2UZTHOBU',
-//     secretAccessKey: 'OyVfzUX3GpJW1UUfqGSuT/11jx1iOJEW+ejuwWSV',
-//     region: 'us-east-1', // Change this to your desired AWS region
-// });
 
 AWS.config.update({
   accessKeyId: process.env.AWS_ACCESS_KEY_ID,
